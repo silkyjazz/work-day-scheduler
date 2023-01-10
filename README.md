@@ -20,19 +20,19 @@ View the [Live Site](https://silkyjazz.github.io/work-day-scheduler/) on Github!
 ## Usage
 
 When the application is rendered to the browser, the user will see time blocks for hours nine to five.
-![On Page Load](assets/on_load.png)
+![On Page Load](./Assets/on_load.png)
 
 The user will be able to save events in the necessary time block
-![Current Event](assets/new_event.png)
+![Current Event](./Assets/new_event.png)
 
 The user will also have the option to change any events that were previously stored
-![Change the current event](assets/change_event.png)
+![Change the current event](./Assets/change_event.png)
 
 The save button is getting the value from the text area and setting the data to local storage on button click.
-![Save the Event](assets/save_button.png)
+![Save the Event](./Assets/save_button.png)
 
 When the user refreshes the page, they are able to see the events that are saved in local storage on page load.
-![Saved Event In Local Storage](assets/saved_event.png)
+![Saved Event In Local Storage](./Assets/saved_event.png)
 
 ## Credits
 
