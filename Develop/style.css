@@ -14,14 +14,12 @@ textarea {
 
 .description {
   white-space: pre-wrap;
-}
 
-.time-block {
-  border-radius: 15px;
 }
 
 .row {
   border-top: 1px solid white;
+  border-radius: 15px;
 }
 
 .hour {
@@ -56,4 +54,7 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+.container-fluid{
+  border-top: 3px solid black;
 }
