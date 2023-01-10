@@ -1,7 +1,10 @@
 
-///getting the save button by the id
+///getting the elements by the id
 var saveBtn = $('.saveBtn');
-
+var currentDay = $('#currentDay');
+//create the day object for today
+var todayDate = dayjs();
+var dayWeek = todayDate.format('dddd');
 //wrapping code in a call to jQuery
 $(function () {
 
@@ -18,16 +21,12 @@ $(function () {
   //getting the data back from local storage
   $("#9 .description").val(localStorage.getItem('9'));
 
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
+  //creating a function that will add or remove the css class depending on the current hour
   function updateHour(){  
     // var hour = $(this).parent().attr("id");
+     // getting the hour of the day from 
     var currentHour = dayjs().hour();
-
+   
     var hourArr = [9,10,11,12,13,14,15,16,17]
 
     hourArr.forEach(hour => {
@@ -55,5 +54,6 @@ $(function () {
 
 
   // TODO: Add code to display the current date in the header of the page.
+  $('#currentDay').text(dayWeek + ', ' + todayDate.format("MMMM D, YYYY"));
 });
     
